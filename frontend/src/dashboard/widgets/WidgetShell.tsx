@@ -21,7 +21,7 @@ export function WidgetShell({ title, onRemove, onClone, onExpand, children }: Pr
                     {onRemove && <Button size="small" danger icon={<CloseOutlined />} onClick={onRemove} />}
                 </div>
             }
-            bodyStyle={{ padding: 8 }}
+            styles={{ body: { padding: 8 } }}
         >
             {children}
         </Card>

@@ -29,10 +29,10 @@ export default function DashboardPage(): JSX.Element {
 
     const layout: Layout[] = widgets.map((w) => ({ ...w.layout, i: w.id }))
 
-    const onLayoutChange = (l: Layout[]): void => {
+    const onLayoutChange = (newLayout: Layout[]): void => {
         setWidgets((ws) =>
             ws.map((w) => {
-                const item = l.find((li) => li.i === w.id)
+                const item = newLayout.find((li) => li.i === w.id)
                 return item ? { ...w, layout: item } : w
             })
         )

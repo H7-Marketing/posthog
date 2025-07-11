@@ -25,7 +25,7 @@ export function Grid({ layout, onLayoutChange, children }: Props): JSX.Element {
             cols={{ lg: 12, md: 10, sm: 6, xs: 4, xxs: 2 }}
             rowHeight={30}
             draggableHandle=".widget-drag-handle"
-            onLayoutChange={(_l, all) => onLayoutChange(all)}
+            onLayoutChange={(current) => onLayoutChange(current)}
         >
             {children}
         </ResponsiveGridLayout>
