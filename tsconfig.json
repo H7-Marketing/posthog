@@ -48,6 +48,17 @@
         "common/esbuilder/*",
         "common/storybook/*"
     ],
+    "include": [
+        "frontend/**/*",
+        ".storybook/**/*",
+        "playwright/**/*",
+        "ee/frontend/**/*",
+        "products/**/frontend/**/*",
+        "products/**/manifest.tsx",
+        "common/esbuilder/*",
+        "common/storybook/*",
+        "src/**/*"
+    ],
     "exclude": ["frontend/dist/**/*", "**/*.mdx"],
     "ts-node": {
         "compilerOptions": {
